@@ -1,0 +1,314 @@
+body{
+    padding: 0;
+    margin: 0;
+
+    height: 100vh;
+    
+    font-family: sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(21, 131, 221);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1000;
+}
+
+.top{
+    width: 100%;
+    height: 65%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 15%;
+    height: 100%;
+    background-color: rgb(21, 131, 221);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo:hover{
+    background-color: rgb(74, 167, 238);
+}
+
+.logo a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 100%;
+}
+
+.login{
+    width: 15%;
+    height: 100%;
+    background-color: rgb(21, 131, 221);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login:hover{
+    background-color: rgb(74, 167, 238);
+    cursor: pointer;
+}
+
+.login{
+    font-size: 15pt;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar{
+    width: 100%;
+    height: 35%;
+    background-color: rgb(196, 196, 196);
+
+   
+}
+
+.menu-button{
+    width: 50px;
+    height: 100%; 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar .menu-button img{
+    height: 80%;
+    width: 40px;
+    padding: 0px 0px 0px 10px;
+
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar img:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.menu-button:hover .subnav{
+    display: block;
+} 
+
+.subnav{
+    position: absolute;
+    background-color: rgb(21, 131, 221);
+    display: none;
+    color: rgb(224, 224, 224);
+    top: 100px;
+    width: 120px;
+    border-radius: 0px 0px 20px 0px;
+}
+
+.subnav li{
+    list-style-type: none;
+    position: relative;
+    padding: 15px;
+}
+
+.subnav li:hover{
+    cursor: pointer;
+    background-color: gray;
+}
+.donation-category{
+    display: none;
+}
+
+#donation:hover .donation-category{
+    display: block;
+    position: relative;
+}
+
+#donation:hover .donation-category li{
+    background-color: rgb(74, 167, 238);
+}
+
+#donation:hover .donation-category li:hover{
+    background-color: rgb(173, 173, 173);
+}
+
+#last{
+    border-radius: 0px 0px 20px 0px;
+}
+
+.content{
+    width: 100%;
+    padding-bottom: 100px;
+    height: calc(100vh - 100px);
+
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.deskripsi strong{
+    font-size: 25pt;
+}
+
+.deskripsi{
+    width: 90%;
+    font-size: 15pt;
+    
+}
+
+.salurkan{
+    width: 90%;
+    font-size: 15pt;
+    padding-bottom: 30px;
+}
+
+.gambar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.gambar img{
+    width: 60%;
+    padding-bottom: 20px;
+}
+
+.rekam{
+    width: 50%;
+    height: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+
+    border-right: 1px solid grey;
+}
+
+.seminar{
+    width: 50%;
+    height: 80%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.join-button{
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.join-button a{
+    width: 40%;
+    height: 40px;
+
+    border-radius: 20px;
+
+    background-color: rgb(21, 131, 221);
+    text-decoration: none;
+    font-size: 15pt;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.join-button a:hover{
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.4);
+}
+
+.footer{
+    width: 100%;
+    height: 10%;
+    background-color:  rgb(21, 131, 221);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.sosmed{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sosmed img{
+    height: 70%;
+    margin-left: 5px;
+}
+
+.copyright{
+    width: 100%;
+    height: 40%;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:520px){
+    .logo{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .logo{
+        width: 25%;
+    }
+
+    .logo img{
+        height: 90%;
+    }
+
+    .deskripsi{
+        font-size: 3vw;
+    }
+
+    .deskripsi strong{
+        font-size: 4.5vw;
+    }
+
+    .salurkan{
+        font-size: 3vw;
+    }
+
+    .join-button a{
+        font-size: 3vw;
+    }
+}
