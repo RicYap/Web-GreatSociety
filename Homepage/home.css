@@ -1,0 +1,514 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(21, 131, 221);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1000;
+}
+
+.top{
+    width: 100%;
+    height: 65%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 15%;
+    height: 100%;
+    background-color: rgb(21, 131, 221);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo:hover{
+    background-color: rgb(74, 167, 238);
+}
+
+.logo a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 100%;
+}
+
+.login{
+    width: 15%;
+    height: 100%;
+    background-color: rgb(21, 131, 221);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login:hover{
+    background-color: rgb(74, 167, 238);
+    cursor: pointer;
+}
+
+.login{
+    font-size: 15pt;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar{
+    width: 100%;
+    height: 35%;
+    background-color: rgb(196, 196, 196);
+
+   
+}
+
+.menu-button{
+    width: 50px;
+    height: 100%; 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar .menu-button img{
+    height: 80%;
+    width: 40px;
+    padding: 0px 0px 0px 10px;
+
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar img:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.menu-button:hover .subnav{
+    display: block;
+} 
+
+.subnav{
+    position: absolute;
+    background-color: rgb(21, 131, 221);
+    display: none;
+    color: rgb(224, 224, 224);
+    top: 100px;
+    width: 120px;
+    border-radius: 0px 0px 20px 0px;
+}
+
+.subnav li{
+    list-style-type: none;
+    position: relative;
+    padding: 15px;
+}
+
+.subnav li:hover{
+    cursor: pointer;
+    background-color: gray;
+}
+.donation-category{
+    display: none;
+}
+
+#donation:hover .donation-category{
+    display: block;
+    position: relative;
+}
+
+#donation:hover .donation-category li{
+    background-color: rgb(74, 167, 238);
+}
+
+#donation:hover .donation-category li:hover{
+    background-color: rgb(173, 173, 173);
+}
+
+#last{
+    border-radius: 0px 0px 20px 0px;
+}
+
+#pembatasAtas{
+    width: 100%;
+    height: 100px;
+}
+
+.content{
+    width: 100%;
+    background-image: url(assets/banner/banner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#join-us{
+    margin-top: 25%;
+}
+
+.content .button{
+    width: 20%;
+    min-width: 100px;
+    max-width: 200px;
+    padding: 10px 20px 10px 20px;
+    margin: 0px 0px 80px 0px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(21, 131, 221);
+    border-radius: 20px;
+
+    font-size: 20pt;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border: solid white;
+}
+
+.content .button:hover{
+    box-shadow: 0px 0px 30px 0px rgb(15, 15, 15, 0.5);
+}
+
+.container1{
+    width: 100%;
+    /* height: 100vh; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-evenly;
+}
+
+.visimisi{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.visimisi .img{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.visimisi img{
+    height: 100%;
+}
+
+#logo-misi{
+    padding-left: 50px;
+}
+
+#visi{
+    width: 50%;
+}
+
+#misi{
+    width: 50%;
+}
+
+.judulvisimisi{
+    display: flex;
+    justify-content: space-around;
+}
+
+.teksvisi{
+    text-align: center;
+    font-size: 15pt;
+}
+
+.judulvisimisi{
+    font-size: 25pt;
+    text-align: center;
+}
+
+.teksmisi{
+    font-size: 15pt;
+}
+
+.pembatas{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    background-color: rgb(196, 196, 196);
+
+    color: white;
+    font-size: 25pt;
+    text-shadow: 0px 5px 5px grey;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2{
+    max-width: 100%;
+
+
+    margin: 0px 0px 80px 0px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.kegiatan{
+    width: 100%;
+    height: 50%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.tekskegiatan{
+    width: 35%;
+
+    font-size: 15pt;
+    padding-left: 40px;
+}
+
+.tekskegiatan strong{
+    font-size: 25pt;
+}
+
+.kegiatan{
+    width: 100%;
+}
+
+.imgkegiatan{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cardkegiatanAtas{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gambar{
+    width: 45%;
+}
+
+.gambar img{
+    width: 100%;
+}
+
+.cardkegiatanBawah{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course_video{
+    width: 100%;
+    height: 500px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    font-size: 25pt;
+}
+
+.isi_course{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.teks_video{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teks_video strong{
+    padding-bottom: 40px;
+}
+
+.video{
+    width: 90%;
+    height: 315px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.8);
+}
+
+.footer{
+    width: 100%;
+    height: calc(100vh * 10 / 100);
+    background-color:  rgb(21, 131, 221);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.sosmed{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sosmed img{
+    height: 70%;
+    margin-left: 5px;
+}
+
+.copyright{
+    width: 100%;
+    height: 40%;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:520px){
+    .logo{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .logo{
+        width: 25%;
+    }
+
+    .logo img{
+        height: 90%;
+    }
+}
+
+@media screen and (max-width:680px) {
+    .content{
+        height: 200px;
+    }
+
+    .pembatas{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 4.5vw;
+    }
+
+    .content .button{
+        font-size: 4.5vw;
+    }
+
+    .visimisi .img{
+        height: 100px;
+    }
+
+    .container1{
+        margin-bottom: 25px;
+    }
+
+    .judulvisimisi{
+        font-size: 4.5vw;
+    }
+
+    .teksvisi{
+        font-size: 3vw;
+    }
+
+    .teksmisi{
+        font-size: 3vw;
+    }
+
+    .tekskegiatan strong{
+        font-size: 4.5vw;
+    }
+
+    .tekskegiatan{
+        font-size: 3vw;
+    }
+
+    .teks_video strong{
+        font-size: 4.5vw;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .logo{
+        width: 25%;
+    }
+
+    .logo img{
+        height: 90%;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .course_video{
+        width: 100%;
+        height: 850px;
+    }
+
+    .isi_course{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .teks_video{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #soft{
+        margin-top: 60px;
+    }
+
+}
+
+@media screen and (max-width:1050px) {
+    .content .button{
+        min-width: 80px;
+    }
+}
+

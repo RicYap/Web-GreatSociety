@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Register.css">
+    <script defer src="Register.js"></script>
+</head>
+<body>
+    <div class="hero">
+        <div class="form-box">
+            <div class="box-logo">
+                <a href="../../Homepage/home.html"><img src="assets/logo.png" alt="a"></a>
+                </div>
+                <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="volunteer()">Volunteer<button>
+                <button type="button"class="toggle-btn" onclick="member()">Member<button>
+            </div>
+            <form id="volunteer" class="input-group">
+                <input type="text" class="input-field" id="name" placeholder="Input Your Name" required>
+                <input type="email" class="input-field" id="email" placeholder="Input Your Email" required>
+                <input type="password" class="input-field" id="password" placeholder="Input Your Password" required>
+                <div class="gender">
+                    <input type="radio" name="gender" id="male" required>Male
+                    <input type="radio" name="gender" id="female" required>Female
+                </div>
+                <input type="text" class="input-field" id="phone" placeholder="08131*******" name="" id="">
+                <input type="checkbox" class="check-box" required>I agree to the terms & conditions
+                <button class="submit-btn" required>Register</button>
+            </form>
+            <form id="member" class="input-group">
+                <input type="text" class="input-field" id="name" placeholder="Input Your Name" required>
+                <input type="email" class="input-field" id="email" placeholder="Input Your Email" required>
+                <input type="password" class="input-field" id="password" placeholder="Input Your Password" required>
+                <div class="gender">
+                    <input type="radio" name="gender" id="male" required>Male
+                    <input type="radio" name="gender" id="female" required>Female
+                </div>
+                <input type="checkbox" class="check-box" required>I agree to the terms & conditions
+                <button class="submit-btn" >Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

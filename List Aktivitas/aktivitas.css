@@ -1,0 +1,342 @@
+body{
+    padding: 0;
+    margin: 0;
+
+    height: 100vh;
+    
+    font-family: sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(21, 131, 221);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1000;
+}
+
+.top{
+    width: 100%;
+    height: 65%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 15%;
+    height: 100%;
+    background-color: rgb(21, 131, 221);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo:hover{
+    background-color: rgb(74, 167, 238);
+}
+
+.logo a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 100%;
+}
+
+.login{
+    width: 15%;
+    height: 100%;
+    background-color: rgb(21, 131, 221);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login:hover{
+    background-color: rgb(74, 167, 238);
+    cursor: pointer;
+}
+
+.login{
+    font-size: 15pt;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar{
+    width: 100%;
+    height: 35%;
+    background-color: rgb(196, 196, 196);
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.menu-button{
+    width: 50px;
+    height: 100%; 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar .menu-button img{
+    height: 80%;
+    width: 40px;
+    padding: 0px 0px 0px 10px;
+
+}
+
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar img:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.menu-button:hover .subnav{
+    display: block;
+} 
+
+.subnav{
+    position: absolute;
+    background-color: rgb(21, 131, 221);
+    display: none;
+    color: rgb(224, 224, 224);
+    top: 100px;
+    width: 120px;
+    border-radius: 0px 0px 20px 0px;
+}
+
+.subnav li{
+    list-style-type: none;
+    position: relative;
+    padding: 15px;
+}
+
+.subnav li:hover{
+    cursor: pointer;
+    background-color: gray;
+}
+.donation-category{
+    display: none;
+}
+
+#donation:hover .donation-category{
+    display: block;
+    position: relative;
+}
+
+#donation:hover .donation-category li{
+    background-color: rgb(74, 167, 238);
+}
+
+#donation:hover .donation-category li:hover{
+    background-color: rgb(173, 173, 173);
+}
+
+#last{
+    border-radius: 0px 0px 20px 0px;
+}
+
+.search-bar{
+    width: 40%;
+    height: 85%;
+
+    background-color: white;
+    
+    margin-left: auto;
+    margin-right: 5px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.search-bar button{
+    height: 100%;
+    border: none;
+}
+
+.search-bar img{
+    height: 100%;
+}
+
+.search-bar input{
+    width: 100%;
+    height: 100%;
+    border-style: none;
+    
+    font-size: 15pt;
+}
+
+.search-bar img{
+    height: 100%;
+}
+
+.search-bar input{
+    width: 90%;
+    height: 100%;
+    border-style: none;
+    
+    font-size: 15pt;
+}
+
+.search-bar input:focus{
+    outline: none;
+}
+
+.content{
+    max-width: 100%;
+    height: calc(auto - 100px);
+
+    padding-top: 125px;
+    padding-bottom: 25px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    justify-content: left;
+}
+
+.card-catalog{
+    width: 400px;
+    height: 450px;
+
+    border-radius: 20px;
+    border: 5px solid #B7B7B7;
+    box-shadow: 0px 4px 20px rgb(0, 0, 0, 0.3);
+
+    margin: 25px 0px 25px 30px;
+
+    display: flex;
+    flex-flow: column;
+}
+
+.gambar-catalog{
+    width: 100%;
+    height: 200px;
+
+    border-bottom: 5px solid #B7B7B7;
+    border-radius: 15px 15px 0px 0px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#kartu1{
+    background-image: url(assets/images/1.jpg);
+}
+
+#kartu2{
+    background-image: url(assets/images/2.jpg);
+}
+
+#kartu3{
+    background-image: url(assets/images/3.jpg);
+}
+
+.deskripsi-catalog{
+    width: 100%;
+    height: 150px;
+
+    border-bottom: 5px solid #B7B7B7;
+}
+
+.join{
+    width: 100%;
+    height: 100px;
+
+    border-radius: 0px 0px 20px 20px;
+
+    font-size: 15pt;
+    font-weight: bold;
+    text-shadow: 0px 4px 4px rgb(0, 0, 0, 0.25);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.join button{
+    width: 100%;
+    height: 100%;
+
+    background-color: rgb(21, 131, 221);
+
+    font-size: 20pt;
+    font-weight: bold;
+    color: white;
+
+    border: none;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.join button:active{
+    box-shadow: inset 0px 0px 10px rgb(0, 0, 0, 0.8);
+}
+
+.footer{
+    width: 100%;
+    height: 10%;
+    background-color:  rgb(21, 131, 221);
+
+    display: flex;
+    flex-direction: column;
+}
+
+.sosmed{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sosmed img{
+    height: 70%;
+    margin-left: 5px;
+}
+
+.copyright{
+    width: 100%;
+    height: 40%;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:520px){
+    .logo{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .logo{
+        width: 25%;
+    }
+
+    .logo img{
+        height: 90%;
+    }
+}
